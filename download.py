@@ -38,8 +38,8 @@ def main(argv):
         is_secure=False,
         calling_format = boto.s3.connection.OrdinaryCallingFormat(),
 )       
-        bucket = conn.get_bucket("flap-plareport", validate=True)
-	print "Connecting D42 storage ......................................................"
+        bucket = conn.get_bucket("<BuckeT_Name>", validate=True)
+	print "Connecting  storage ......................................................"
         key = bucket.get_key(inputfile)
 	print "..................................Downloading files..............................."
         key.get_contents_to_filename(outputfile)
