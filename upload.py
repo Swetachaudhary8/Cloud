@@ -16,7 +16,7 @@ AWS_ACCESS_SECRET_KEY = '<accesssecretkey>'
 path = "/grid/1/consumption/"
 file = os.path.join(path, consumption)
 f = open(file, 'r+')
-conn = boto.connect_s3(AWS_ACCESS_KEY, AWS_ACCESS_SECRET_KEY, host = "10.47.2.2", port = 80,
+conn = boto.connect_s3(AWS_ACCESS_KEY, AWS_ACCESS_SECRET_KEY, host = "<HOST>", port = 80,
         is_secure=False,              
         calling_format = boto.s3.connection.OrdinaryCallingFormat(),
 )
